@@ -2,7 +2,6 @@ import View from './View.js';
 
 import icons from 'url:../../img/icons.svg';
 //? fraction is for nicely render decimal of recipe ingridients qauntity
-import { Fraction } from 'fractional';
 
 //? Class with private methods and variables
 class RecipeView extends View {
