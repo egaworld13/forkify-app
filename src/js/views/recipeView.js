@@ -2,7 +2,7 @@ import View from './View.js';
 
 import icons from 'url:../../img/icons.svg';
 //? fraction is for nicely render decimal of recipe ingridients qauntity
-
+import fracty from 'fracty';
 //? Class with private methods and variables
 class RecipeView extends View {
   //? Private fields
@@ -128,7 +128,7 @@ class RecipeView extends View {
        <use href="${icons}#icon-check"></use>
     </svg>
      <div class="recipe__quantity">${
-       ing.quantity ? new Fraction(ing.quantity).toString() : ''
+       ing.quantity ? fracty(ing.quantity).toString() : ''
      }</div>
      <div class="recipe__description">
        <span class="recipe__unit">${ing.unit}</span>
