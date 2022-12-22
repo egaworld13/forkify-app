@@ -15,7 +15,7 @@ export const state = {
   bookmarks: [],
 };
 const createRecipeObject = function (data) {
-  //? Destructuring recived obj form api
+  //? Destructuring received obj form api
   const { recipe } = data.data;
 
   //? return an obj to rename properties so we can operate with them easily
